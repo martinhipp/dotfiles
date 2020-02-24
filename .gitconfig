@@ -1,0 +1,32 @@
+[include]
+    path = ~/.gitconfig.local
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+[alias]
+    git = !exec git
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    ft = fetch
+    rb = rebase
+    df = diff --color-words
+    dc = diff --cached
+    ds = diff --stat
+    lp = log -p --abbrev-commit --color-words
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = log --stat --abbrev-commit
+    l = log --oneline --abbrev-commit
+    lg = log --abbrev-commit --decorate
+[branch]
+    autosetuprebase = always
+[color]
+    ui = true
+[pull]
+    rebase = true
+[push]
+    default = simple
+[credential]
+	helper = osxkeychain
